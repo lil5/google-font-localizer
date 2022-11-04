@@ -13,7 +13,6 @@ import (
 	"regexp"
 	"sync"
 
-	validator "github.com/go-playground/validator/v10"
 	"github.com/urfave/cli/v2"
 )
 
@@ -22,7 +21,6 @@ const (
 	filePerm   = 0663
 )
 
-var validate = validator.New()
 var reUrl = regexp.MustCompile(`url\((https:\/\/[^\)]+)\)`)
 
 func main() {
